@@ -1,0 +1,257 @@
+/* Stilo para el curriculum de ejemplo */
+
+/* se llama a una fuente */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cantata+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* se ajusta el body junyo a su background */
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(to right, #6e6d6d, #986666, #454141);
+    font-family: "Cantata One", serif;
+}
+
+/* se arma el cuerpo para el curriculum */
+.cuerpo{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0px;
+
+}
+
+/* se arma y diseña la parte de información personal */
+.nominfo{
+    margin: 20px;
+}
+
+.nombre{
+display: flex;
+flex-wrap: wrap;
+    background-color: rgb(137, 137, 137);
+    justify-content: center;
+    text-align: center;
+padding: 20px;
+margin: 20px;
+border: solid 3px rgb(232, 0, 0);
+}
+
+.nombre p{
+    color: white;
+    font-size:20px;
+}
+
+.nombre img{
+    border-radius: 500px;
+}
+
+.nombre img:not(:hover){
+    border-radius: 500px;
+    animation: rotacion 0.8s;
+    scale: 1.1;
+}
+
+/* animación */
+@keyframes rotacion{
+    0%{transform:rotateY(0)}
+    100%{transform:rotateY(360deg)}
+}
+
+.infodemi{
+    margin: 3px; 
+}
+
+.video{
+    margin: 50px;
+}
+
+.video video{
+    border-radius: 20px;
+    border: solid rgb(140, 0, 0) 3px;
+}
+/* se termina la parte de datos personales */
+
+/* se comienza a diseñar la parte de datos laborales */
+
+/* experiencia */
+.exp{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    font-size: 20px;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius:20px;
+    margin: 10px;
+
+}
+
+.uno{
+    justify-content: center;
+    text-align: center;
+   border-radius: 100px;
+   width: 85px;
+   height: 30px;
+   background-color: rgb(72, 72, 72);
+   margin:28px 5px;
+   color: white;
+}
+
+.exper{
+    margin:28px 5px;
+}
+
+/* educación */
+.edu{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    font-size: 20px;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius:20px;
+    width: auto;
+    margin: 10px;
+    height: auto;
+}
+
+.dos{
+    justify-content: center;
+    text-align: center;
+   border-radius: 100px;
+   width: 40px;
+   height: 30px;
+   background-color: rgb(72, 72, 72);
+   margin:28px 5px;
+   color: white;
+}
+
+.educa{
+    margin:28px 5px;
+}
+
+
+/* habilidades */
+.ha{
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius:20px;
+    width: auto;
+    margin: 10px;
+}
+
+.tres{
+    justify-content: center;
+    text-align: center;
+   border-radius: 100px;
+   width: 70px;
+   height: 30px;
+   background-color: rgb(72, 72, 72);
+   margin:28px 5px;
+   color: white;
+}
+
+.habili{
+    margin:28px 5px;
+}
+
+/* proyectos */
+.pro{
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius:20px;
+    width: auto;
+    margin: 10px;
+}
+
+.cuatro{
+    justify-content: center;
+    text-align: center;
+   border-radius: 100px;
+   width: 100px;
+   height: 30px;
+   background-color: rgb(72, 72, 72);
+   margin:28px 5px;
+   color: white;
+}
+
+.proyec{
+    margin:28px 5px;
+}
+
+/* referencias */
+.re{
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    border: solid 3px rgb(255, 0, 0);
+    border-radius:20px;
+    width: auto;
+    margin: 10px;
+}
+
+.cinco{
+    justify-content: center;
+    text-align: center;
+   border-radius: 100px;
+   width: 60px;
+   height: 30px;
+   background-color: rgb(72, 72, 72);
+   margin:28px 5px;
+   color: white;
+}
+
+.refe{
+    margin:28px 5px;
+}
+/* se termina de hacer los datos laborales */
+
+/* se crea el boton para volver al formulario */
+.redi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    text-decoration: none;
+}
+
+.redi button{
+    color: rgb(0, 0, 0) ;
+    background-color: rgb(201, 201, 201);
+    font-size: 20px;
+border-radius: 20px;
+border: solid 2px black;
+padding: 10px;
+width: 200px;
+transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease; 
+}
+
+/* animación */
+.redi{
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* animación */
+.redi:hover{
+    transform: none;
+}
+
+/* animación */
+.redi button:hover{
+    box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.4);
+    background-color: black;
+    color: white;
+    border: solid 2px red;
+}
+/* se termina el boton junto a sus respectivas animaciones */
+

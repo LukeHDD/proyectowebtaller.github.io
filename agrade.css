@@ -1,0 +1,20 @@
+/* se arma el estilo de la pagina de agradecimiento */
+
+/* se ajusta con el background y flex-wrap el h1 */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #434343, #6e6d6d, #1e1e1e);
+}
+
+/* se diseña y ajusta el h1 */
+h1{
+ display: flex;
+transform: translateY(260px) translateX(0px);
+color: white;
+font-size: 40px;
+}

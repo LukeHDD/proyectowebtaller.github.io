@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styloform.css">
+    
+    <title>Curriculum</title>
+</head>
+<body>
+
+<!-- Titulo con animación -->
+ <h1>Crea tu curriculum</h1>
+
+ <!-- se crea el formulario -->
+    <form action="">
+<!-- se crea la parte donde el usuario pueda escribir sus datos personales -->
+        <section class="datos">
+            <div class="perfiles">
+
+                <!-- se agregan los imputs con labels para que el usuario pueda saber que poner -->
+
+                 <!-- foto perfil -->
+                <label for="ft">FOTO DE PERFIL</label>
+                <input type="file" placeholder="FOTO PERFIL" id="ft" name="ft" required><br>
+                <br>
+                <!-- nombre y apellido -->
+                <label for="Nom">NOMBRE Y APELLIDO</label>
+                <input type="text" placeholder="Nombre y Apellido" id="Nom" name="Nom" required><br>
+                <br>
+
+                <!-- carrera -->
+                <label for="car">CARRERA</label>
+                <input type="text" placeholder="Carrera" id="car" name="car" required><br>
+                <br>
+
+                <!-- nacionalidad -->
+                <label for="nacio">NACIONALIDAD</label>
+                <input type="text" placeholder="Nacionalidad" id="nacio" name="nacio" required><br>
+                <br>
+
+                <!-- edad -->
+                <label for="ed">EDAD</label>
+                <input type="text" placeholder="Edad" id="ed" name="ed" required><br>
+                <br>
+
+                <!-- telefono -->
+                <label for="telf">TELEFONO</label>
+                <input type="tel" placeholder="Telefono" id="telf" name="telf" required><br>
+                <br>
+
+                <!-- email -->
+                <label for="em">EMAIL</label>
+                <input type="email" placeholder="Email" id="em" name="em" required>
+                <br>
+            </div>
+            <!-- fotos y videos -->
+              <div class="fotos">
+                <label for="im">Fotos y videos de mi trabajo</label>
+                 <input type="file" placeholder="Su imagen o video" id="im" name="im">
+              </div>
+        </section>
+
+<!-- se crea la parte donde el usuario pueda escribir sus datos laborales para su curriculum -->
+        <section class="informa">
+            <div class="dat">
+
+                <!-- experiencia laboral -->
+                <label for="experien">EXPERIENCIA LABORAL</label>
+                <textarea type="text" placeholder="Experiencia laboral" id="experien" name="experien" cols="auto" rows="auto" required></textarea><br>
+                <br>
+
+                <!-- educación -->
+                <label for="educac">EDUCACIÓN</label>
+                <textarea type="text" placeholder="Educación" id="educac" name="educac" cols="auto" rows="auto" required></textarea><br>
+                <br>
+
+                <!-- habilidades -->
+                <label for="habilid">HABILIDADES</label>
+                <textarea type="text" id="habilid" placeholder="Habilidades" name="habilid" required cols="auto" rows="auto"></textarea><br>
+                <br>
+
+                <!-- proyectos -->
+                <label for="proyect">PROYECTOS DESTACADOS</label>
+                <textarea type="text" placeholder="Proyectos destacados" id="proyect" name="proyect" cols="auto" rows="auto" required></textarea><br>
+                <br>
+
+                <!-- referencias -->
+                <label for="referen">REFERENCIAS</label>
+                <textarea type="text" placeholder="Referencias" id="referen" name="referen" cols="auto" rows="auto" required></textarea><br>
+            </div>
+        </section>
+
+        <!-- se crean los botones de envio y borrar pomr si lo quiere hacer de vuelta -->
+        <section class="botonsitos2">
+            <div class="bot1">
+              <button type="reset" name="reset" id="reset">BORRAR</button>
+            </div>
+            <div class="bot2">
+                <a href="agrade.html">ENVIAR</button></a>
+            </div>
+         </section>
+    </form>
+    <!-- se cierra el formulario -->
+
+ <!-- se crea el boton para ir al curriculum de ejemplo -->   
+<section class="ejemplo">
+    <div class="ejem">
+        <a href="curriculum.html"><button>EJEMPLO</button></a>
+    </div>
+</section>
+
+<!-- js para que el textarea se pueda ir expandiendo a medida que el usuario escriba -->
+    <script>
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', () => {
+                textarea.style.height = 'auto';  // Restablece la altura
+                textarea.style.height = `${textarea.scrollHeight}px`;  // Ajusta a la altura del contenido
+            });
+        });
+        </script>
+</body>
+</html>

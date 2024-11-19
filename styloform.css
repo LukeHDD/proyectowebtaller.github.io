@@ -1,0 +1,260 @@
+/* Stilo para el formulario */
+
+/* se llama a una fuente */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cantata+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* se ajusta el titulo junto a una animación */
+h1{
+    color: white;
+    margin: 40px;
+    animation: zoomIn 1.5s ease-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* se ajusta el cuerpo de la pagina y se le establece colores */
+body {
+    font-family: "Cantata One", serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #92b3eb, #5276d1, #94c3db);
+}
+
+/* se comienza a diseñar el formulario junto a sus colores y diseños de cajas */
+.datos {
+    font-family: "Cantata One", serif;
+    display: flex;
+    flex-wrap: wrap;
+        background-color: rgb(137, 137, 137);
+        justify-content: center;
+        text-align: center;
+    padding: 20px;
+    margin: 0px 210px;
+    border: solid 3px rgb(0, 0, 0);
+}
+
+/* datos del usuario */
+.perfiles {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.perfiles label{
+    margin: 3px;
+    color: white;
+width: auto;
+height: auto;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.fotos {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    text-align: center;
+    margin-top: 280px; 
+}
+
+.fotos label {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fotos input[type="file"] {
+width: auto;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.datos input{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    font-size: 15px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius:20px;
+    width: auto;
+    margin: 10px;
+    height: auto;
+}
+
+
+/* se le da datalles a la parte del formulario de los datos laborales */
+.informa {
+    font-family: "Cantata One", serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.dat label{
+    display: flex;
+ color: white;
+ margin: 10px;
+ text-align: center;
+}
+
+.dat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.dat textarea{
+    
+    background-color: rgb(250, 250, 250);
+    font-size: 20px;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 100%;  
+    margin: 10px;
+    height: auto;  
+    min-height: 50px;  
+    resize: vertical;  
+    }
+
+    textarea::placeholder {
+        text-align: center;
+    }
+/* se termina de diseñar el dformulario*/
+    
+/* se hacen los botones que forman parate del formulario */
+    .botonsitos2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 20px;
+        margin: 25px;
+        width: 95%; 
+        text-decoration: none;
+    }
+    
+    .botonsitos2 button{
+        color: rgb(0, 0, 0);
+        background-color: rgb(201, 201, 201);
+        font-size: 20px;
+        border-radius: 20px;
+        border: solid 2px black;
+        margin: 20px;
+        padding: 10px;
+        width: 200px;
+        flex-grow: 1;
+        max-width: 300px; 
+    }
+
+    .botonsitos2 a{
+        justify-content: center;
+        display: flex;
+        color: rgb(0, 0, 0);
+        background-color: rgb(201, 201, 201);
+        font-size: 20px;
+        border-radius: 20px;
+        border: solid 2px black;
+        margin: 20px;
+        padding: 10px 0px;
+        width: 200px;
+        flex-grow: 1;
+        max-width: 300px;
+        transform: translateY(0px);
+        text-decoration: none;
+    }
+   
+    /* animación */
+    .bot1{
+        transition: transform 0.2s ease, text-shadow 0.2s ease;
+    }
+    
+    .bot1:hover{
+        transform: scale(1.1) translateX(0px);
+    }
+    
+    .bot1 a:hover{
+        box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.4);
+        background-color: black;
+        color: white;
+        border: solid 2px rgb(0, 108, 231);
+    }
+
+    /* animación */
+    .bot2{
+        transition: transform 0.2s ease, text-shadow 0.2s ease;
+    }
+    
+    .bot2:hover{
+        transform: scale(1.1) translateX(0px);
+    }
+    
+    .bot2 a:hover{
+        box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.4);
+        background-color: black;
+        color: white;
+        border: solid 2px rgb(0, 108, 231);
+    }
+/* se termina el diseño de los botones y sus animaciones */
+    
+    
+/* se crea el boton para ir a el curriculum de ejemplo */    
+.ejemplo{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin: 25px;
+    width: 100%; 
+    text-decoration: none;
+}
+
+.ejemplo button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(201, 201, 201);
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid 2px black;
+    margin: 20px;
+    padding: 10px;
+    width: 200px; 
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+/* animación */
+.ejem{
+     transition: transform 0.2s ease, text-shadow 0.2s ease;
+    }
+    
+.ejem:hover{
+    transform: scale(1.1) translateX(0px);
+    }
+    
+.ejem button:hover{
+     box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.4);
+     background-color: black;
+    color: white;
+     border: solid 2px rgb(0, 108, 231);
+    }
+    
